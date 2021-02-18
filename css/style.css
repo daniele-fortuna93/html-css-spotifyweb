@@ -72,6 +72,20 @@ aside{
   background-color: #000;
   flex-shrink: 0;
 }
+header{
+  color: #fff;
+  padding: 25px 0 25px 10px;
+}
+.logo{
+  fill: #fff;
+  width: 140px;
+  height: 50px;
+  vertical-align: middle;
+}
+.logo_xs{
+  font-size: 20px;
+  display: none;
+}
 /* main__nav */
 .main__nav li a{
   display: inline-block;
@@ -167,8 +181,14 @@ footer{
   }
   .main__nav__list,
   .playlist,
-  header img{
+  .logo{
     display: none;
+  }
+  header{
+    padding: 10px 0 10px 10px;
+  }
+  .logo_xs{
+    display: block;
   }
   .main__nav__list_xs{
     display: block;
