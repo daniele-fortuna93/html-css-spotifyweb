@@ -18,7 +18,7 @@ a{
   text-decoration: none;
 }
 h4{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
@@ -26,6 +26,19 @@ h4{
 /* mix */
 /* /mix */
 /* btn */
+#upgrade{
+  padding: 10px 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+#upgrade:hover{
+  transform: scale(1.1);
+}
 #new_playlist{
   background-color: transparent;
   color: #717171;
@@ -34,6 +47,7 @@ h4{
   border: none;
   outline: none;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 #new_playlist i{
   font-size: 28px;
@@ -58,6 +72,7 @@ aside{
   background-color: #000;
   flex-shrink: 0;
 }
+/* main__nav */
 .main__nav li a{
   display: inline-block;
   padding: 10px 0 10px 8px;
@@ -71,6 +86,22 @@ aside{
 .main__nav{
   margin-bottom: 20px;
 }
+.main__nav__list_xs{
+  display: none;
+}
+/* /main__nav */
+.playlist{
+  margin-bottom: 80px;
+  overflow: auto;
+  padding-left: 10px;
+}
+.playlist a{
+  display: inline-block;
+  padding: 10px 0;
+}
+.playlist a:hover{
+  color: #fff;
+}
 .install{
   height: 80px;
   position: absolute;
@@ -79,11 +110,6 @@ aside{
   left: 0;
   background-color: green;
 }
-.playlist{
-  margin-bottom: 80px;
-  overflow: auto;
-  padding-left: 10px;
-}
 /* /aside */
 /* container */
 .container{
@@ -91,11 +117,14 @@ aside{
 }
 .top__bar{
   position: sticky;
+  padding-right: 15px;
   top: 0;
   width: 100%;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  line-height: 100px;
+  text-align: right;
 }
 /* /container */
 /* /main */
@@ -106,3 +135,17 @@ footer{
   z-index: 20;
 }
 /* /footer */
+/* responsive */
+@media screen and (max-width: 576px) {
+  aside{
+    width: 50px;
+  }
+  .main__nav__list,
+  .playlist,
+  header img{
+    display: none;
+  }
+  .main__nav__list_xs{
+    display: block;
+  }
+}
