@@ -126,6 +126,31 @@ aside{
   line-height: 100px;
   text-align: right;
 }
+/* second__nav */
+.second__nav{
+  text-align: center;
+  padding: 15px 0;
+}
+.second__nav li,
+.second__nav a{
+  display: inline-block;
+}
+.second__nav a{
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.second__nav li:hover a:after{
+  display: block;
+  content: '';
+  height: 2px;
+  width: 22px;
+  margin: auto;
+  background-color: #adff2f;
+}
+/* /second__nav */
+.main__box{
+
+}
 /* /container */
 /* /main */
 /* footer */
@@ -149,3 +174,4 @@ footer{
     display: block;
   }
 }
+/* /responsive */
