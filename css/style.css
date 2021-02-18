@@ -24,6 +24,9 @@ h4{
 }
 /* /typo */
 /* mix */
+.d__flex{
+  display: flex;
+}
 /* /mix */
 /* btn */
 #upgrade{
@@ -60,12 +63,10 @@ h4{
 /* main */
 main{
   height: calc(100% - 100px);
-  display: flex;
 }
 /* aside */
 aside{
   position: relative;
-  display: flex;
   flex-direction: column;
   height: 100%;
   width: 300px;
@@ -153,6 +154,9 @@ header{
   padding: 5px 10px;
   text-transform: uppercase;
 }
+.second__nav li:hover a{
+  color: #fff;
+}
 .second__nav li:hover a:after{
   display: block;
   content: '';
@@ -163,7 +167,11 @@ header{
 }
 /* /second__nav */
 .main__box{
-
+  padding-left: 15px;
+}
+.box__recently{
+  width: calc((100% / 6) - 10px);
+  margin-right: 10px;
 }
 /* /container */
 /* /main */
@@ -175,7 +183,16 @@ footer{
 }
 /* /footer */
 /* responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 575px) {
   aside{
     width: 50px;
   }
@@ -192,6 +209,10 @@ footer{
   }
   .main__nav__list_xs{
     display: block;
+  }
+  .box__recently{
+    width: calc((100% / 2) - 10px);
+    margin-right: 10px;
   }
 }
 /* /responsive */
