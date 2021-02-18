@@ -5,13 +5,44 @@
   box-sizing: border-box;
 }
 body{
+  color: #fff;
+}
+.wrapper{
   height: 100vh;
   background-color: #141922;
 }
 /* typo */
+a{
+  font-size: 16px;
+  color: #717171;
+  text-decoration: none;
+}
+h4{
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
 /* /typo */
 /* mix */
 /* /mix */
+/* btn */
+#new_playlist{
+  background-color: transparent;
+  color: #717171;
+  padding: 10px 0;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#new_playlist i{
+  font-size: 28px;
+  vertical-align: middle;
+}
+#new_playlist:hover{
+  color: #fff;
+}
+/* /btn */
 /* main */
 main{
   height: calc(100% - 100px);
@@ -19,9 +50,39 @@ main{
 }
 /* aside */
 aside{
+  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 300px;
   background-color: #000;
+  flex-shrink: 0;
+}
+.main__nav li a{
+  display: inline-block;
+  padding: 10px 0 10px 8px;
+  border-left: 2px solid transparent;
+}
+.main__nav li a:hover,
+.main__nav li a:focus{
+  border-left: 2px solid #adff2f;
+  color: #fff;
+}
+.main__nav{
+  margin-bottom: 20px;
+}
+.install{
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: green;
+}
+.playlist{
+  margin-bottom: 80px;
+  overflow: auto;
+  padding-left: 10px;
 }
 /* /aside */
 /* container */
@@ -42,5 +103,6 @@ aside{
 footer{
   height: 100px;
   background-color: #282828;
+  z-index: 20;
 }
 /* /footer */
