@@ -38,6 +38,11 @@ h5{
   color: #666666;
   margin-top: 10px;
 }
+.track_name span small{
+  font-size: 10px;
+  font-weight: 500;
+  color: #666666;
+}
 /* /typo */
 /* mix */
 li{
@@ -297,7 +302,44 @@ footer{
   height: 100px;
   background-color: #282828;
   z-index: 20;
+  padding: 10px;
 }
+.footer__info_music,
+.footer__audio{
+  align-items: center;
+  flex-basis: 25%;
+}
+.footer__player{
+  flex-basis: 50%;
+  background-color: green;
+}
+/* footer__info_music */
+.track{
+  align-items: center;
+}
+.folder{
+  flex-wrap: wrap;
+}
+.track_img{
+  flex-basis: 20%;
+  margin-right: 15px;
+}
+.track_img img{
+  width: 45px;
+}
+.track_name{
+  margin-right: 20px;
+}
+.folder i{
+  margin-right: 5px;
+  margin-bottom: 4px;
+  color: #666666;
+}
+.folder i:hover{
+  color: #fff;
+  cursor: pointer;
+}
+/* /footer__info_music */
 /* /footer */
 /* responsive */
 @media screen and (max-width: 1199px) {
@@ -316,6 +358,9 @@ footer{
   }
   aside{
     width: 200px;
+  }
+  .folder i{
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 575px) {
