@@ -4,23 +4,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  color: #fff;
-}
 .wrapper{
   height: 100vh;
   background-color: #141922;
 }
 /* typo */
+body{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
 a{
   font-size: 16px;
   color: #717171;
+  font-weight: 500;
   text-decoration: none;
 }
 h4{
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
 }
 /* /typo */
 /* mix */
@@ -50,10 +51,13 @@ h4{
   border: none;
   outline: none;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin: 5px 0 8px;
 }
-#new_playlist i{
-  font-size: 28px;
+#new_playlist svg{
+  height: 30px;
+  width: 30px;
+  fill: #000;
+  background-color: currentColor;
   vertical-align: middle;
 }
 #new_playlist:hover{
@@ -88,6 +92,12 @@ header{
   display: none;
 }
 /* main__nav */
+.main__nav{
+  margin-bottom: 20px;
+}
+.main__nav li a svg{
+  vertical-align: text-bottom;
+}
 .main__nav li a{
   display: inline-block;
   padding: 10px 0 10px 8px;
@@ -98,9 +108,7 @@ header{
   border-left: 2px solid #adff2f;
   color: #fff;
 }
-.main__nav{
-  margin-bottom: 20px;
-}
+
 .main__nav__list_xs{
   display: none;
 }
@@ -154,10 +162,19 @@ header{
   padding: 5px 10px;
   text-transform: uppercase;
 }
+.second__nav a::after{
+  display: block;
+  content: '';
+  height: 2px;
+  width: 22px;
+  margin: auto;
+  background-color: transparent;
+}
 .second__nav li:hover a{
   color: #fff;
 }
-.second__nav li:hover a:after{
+.second__nav li:hover a:after,
+.second__nav li:first-child a::after{
   display: block;
   content: '';
   height: 2px;
