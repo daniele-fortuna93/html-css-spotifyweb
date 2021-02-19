@@ -15,7 +15,7 @@ body{
 }
 a{
   font-size: 16px;
-  color: #717171;
+  color: #666666;
   font-weight: 500;
   text-decoration: none;
 }
@@ -25,6 +25,9 @@ h4{
 }
 /* /typo */
 /* mix */
+li{
+  list-style-type: none;
+}
 .d__flex{
   display: flex;
 }
@@ -44,6 +47,7 @@ h4{
   transform: scale(1.1);
 }
 #new_playlist{
+  text-align: left;
   background-color: transparent;
   color: #717171;
   padding: 10px 0;
@@ -70,12 +74,12 @@ main{
 }
 /* aside */
 aside{
-  position: relative;
   flex-direction: column;
   height: 100%;
   width: 300px;
   background-color: #000;
   flex-shrink: 0;
+  overflow: hidden;
 }
 header{
   color: #fff;
@@ -114,9 +118,12 @@ header{
 }
 /* /main__nav */
 .playlist{
-  margin-bottom: 80px;
-  overflow: auto;
+  flex-direction: column;
+  overflow: hidden;
   padding-left: 10px;
+}
+.playlist ul{
+  overflow: auto;
 }
 .playlist a{
   display: inline-block;
@@ -125,14 +132,37 @@ header{
 .playlist a:hover{
   color: #fff;
 }
-.install{
-  height: 80px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: green;
+.user__box{
+  padding: 5px 10px;
+  margin-top: auto;
 }
+.install{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.circle{
+  text-align: center;
+  font-size: 8px;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+}
+.install_xs,
+.user_xs{
+  display: none;
+  margin-top: 5px;
+}
+.user{
+  margin-top: 10px;
+}
+.user_icon{
+  background-color: #808080;
+  padding: 4px;
+  border-radius: 50%;
+}
+
 /* /aside */
 /* container */
 .container{
@@ -212,6 +242,7 @@ footer{
 @media screen and (max-width: 575px) {
   aside{
     width: 50px;
+    text-align: center;
   }
   .main__nav__list,
   .playlist,
@@ -219,13 +250,34 @@ footer{
     display: none;
   }
   header{
-    padding: 10px 0 10px 10px;
+    padding: 10px 0;
+  }
+  .main__nav li a{
+    border: none;
+    padding: 5px 0;
+  }
+  .main__nav li a:hover,
+  .main__nav li a:focus{
+    color: #fff;
+    border: none;
   }
   .logo_xs{
-    display: block;
+    display: inline-block;
   }
   .main__nav__list_xs{
-    display: block;
+    display: inline-block;
+  }
+  .install,
+  .user{
+    display: none;
+  }
+  .install_xs,
+  .user_xs{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .user__box hr{
+    display: none;
   }
   .box__recently{
     width: calc((100% / 2) - 10px);
