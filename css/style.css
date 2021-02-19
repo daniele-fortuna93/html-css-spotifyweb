@@ -23,6 +23,15 @@ h4{
   font-size: 16px;
   font-weight: 600;
 }
+h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.box__recently span small{
+  font-size: 10px;
+  color: #666666;
+}
 /* /typo */
 /* mix */
 li{
@@ -162,11 +171,11 @@ header{
   padding: 4px;
   border-radius: 50%;
 }
-
 /* /aside */
 /* container */
 .container{
   width: 100%;
+  overflow-y: auto;
 }
 .top__bar{
   position: sticky;
@@ -213,13 +222,26 @@ header{
   background-color: #adff2f;
 }
 /* /second__nav */
+/* main__box */
 .main__box{
   padding-left: 15px;
+}
+.container__recently{
+  flex-wrap: wrap;
 }
 .box__recently{
   width: calc((100% / 6) - 10px);
   margin-right: 10px;
+  text-align: center;
+  margin-bottom: 12px;
 }
+.box__recently_img{
+  margin-bottom: 8px;
+}
+.box__recently_img img{
+  width: 100%;
+}
+/* /main__box */
 /* /container */
 /* /main */
 /* footer */
@@ -231,13 +253,19 @@ footer{
 /* /footer */
 /* responsive */
 @media screen and (max-width: 1199px) {
-
+  .box__recently{
+    width: calc((100% / 4) - 10px);
+  }
 }
 @media screen and (max-width: 991px) {
-
+  .box__recently{
+    width: calc((100% / 3) - 10px);
+  }
 }
 @media screen and (max-width: 767px) {
-
+  .box__recently{
+    width: calc((100% / 2) - 10px);
+  }
 }
 @media screen and (max-width: 575px) {
   aside{
@@ -279,9 +307,6 @@ footer{
   .user__box hr{
     display: none;
   }
-  .box__recently{
-    width: calc((100% / 2) - 10px);
-    margin-right: 10px;
-  }
+
 }
 /* /responsive */
