@@ -41,7 +41,7 @@
           <!-- playlist -->
           <div class="playlist d__flex">
             <h4>PLAYLIST</h4>
-            <button id="new_playlist" type="button" name="button"><svg class="_28160026e8be14060f22ead8e2af36f5-scss" shape-rendering="crispEdges" viewBox="0 0 36 36"><path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path></svg> Crea Playlist</button>
+            <button id="new_playlist" class="btn" type="button" name="button"><svg class="_28160026e8be14060f22ead8e2af36f5-scss" shape-rendering="crispEdges" viewBox="0 0 36 36"><path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path></svg> Crea Playlist</button>
             <ul>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
@@ -66,7 +66,7 @@
         <div class="container">
           <!-- top__bar -->
           <div class="top__bar">
-            <button id="upgrade" type="button" name="button">Effettua l'upgrade</button>
+            <button id="upgrade" class="btn" type="button" name="button">Effettua l'upgrade</button>
           </div>
           <!-- /top__bar -->
           <!-- second__nav -->
@@ -230,7 +230,22 @@
             <i class="far fa-folder"></i>
           </div>
         </div>
-        <div class="footer__player"></div>
+        <div class="footer__player">
+          <div class="button__player text_center">
+            <ul class="d__flex">
+              <li><button class="btn" type="button" name="button"><i class="fas fa-random"></i></button></li>
+              <li><button class="btn" type="button" name="button"><i class="fas fa-step-backward"></i></button></li>
+              <li><button class="btn btn__play" type="button" name="button"><i class="far fa-play-circle"></i></button></li>
+              <li><button class="btn" type="button" name="button"><i class="fas fa-step-forward"></i></button></li>
+              <li><button class="btn" type="button" name="button"><i class="fas fa-redo-alt"></i></button></li>
+            </ul>
+          </div>
+          <div class="track__time d__flex">
+            <div class="track__time_bar">
+              <div class="charge__bar"></div>
+            </div>
+          </div>
+        </div>
         <div class="footer__audio"></div>
       </footer>
     </div>
