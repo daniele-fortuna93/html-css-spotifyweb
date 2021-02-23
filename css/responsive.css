@@ -290,6 +290,11 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 450px){
+  .overlay i:hover .animation__bar{
+    display: none;
+  }
+}
 @media screen and (max-height:350px) {
   .top__bar{
     display: none;
