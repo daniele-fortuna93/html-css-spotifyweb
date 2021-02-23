@@ -42,12 +42,30 @@ h5{
   font-size: 10px;
   font-weight: 500;
   color: #666666;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 footer .btn{
   color: #fff;
 }
 /* /typo */
 /* mix */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 20px;
+
+} /* colore di sfondo delle scrollbar */
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+}
 .text_center{
   text-align: center;
 }
@@ -72,10 +90,46 @@ li{
   transition: 0.3s;
 }
 .overlay i{
+  position: relative;
   color: #fff;
   font-size: 50px;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+.overlay i:hover{
+  color: #1db954;
+}
+.animation__bar{
+  display: none;
+  position: absolute;
+  bottom: -55px;
+  right: -65px;
+  width: 6px;
+  height: 10px;
+  background-color: #1db954;
+  animation-name: play_bar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.animation__bar:nth-child(2){
+  animation-delay: 0.4s;
+  right: -55px;
+}
+.animation__bar:nth-child(3){
+  animation-delay: 0.8s;
+  right: -45px;
+}
+.overlay i:hover .animation__bar{
+  display: block;
+}
+.img_circle .overlay i .animation__bar{
+  right: -45px;
+}
+.img_circle .overlay i .animation__bar:nth-child(2){
+  right: -35px;
+}
+.img_circle .overlay i .animation__bar:nth-child(3){
+  right: -25px;
 }
 /* /mix */
 /* btn */
@@ -409,6 +463,8 @@ footer{
   content: '0:25';
   font-size: 10px;
 }
+/* /footer__player */
+/* footer__audio */
 .footer__audio{
   justify-content: flex-end;
 }
@@ -423,104 +479,72 @@ footer{
   height: 4px;
   background-color: #666666;
 }
+/* footer__audio */
 /* /footer */
-/* responsive */
-@media screen and (max-width: 1199px) {
-  .box__section{
-    width: calc((100% / 4) - 10px);
+/* animation */
+@keyframes play_bar {
+  0% {
+    height: 10px;
+  }
+  5% {
+    height: 15px;
+  }
+  10% {
+    height: 20px;
+  }
+  15% {
+    height: 25px;
+  }
+  20% {
+    height: 35px;
+  }
+  25% {
+    height: 30px;
+  }
+  30% {
+    height: 35px;
+  }
+  35% {
+    height: 25px;
+  }
+  40% {
+    height: 20px;
+  }
+  45% {
+    height: 25px;
+  }
+  50% {
+    height: 30px;
+  }
+  55% {
+    height: 20px;
+  }
+  60% {
+    height: 35px;
+  }
+  65% {
+    height: 30px;
+  }
+  70% {
+    height: 25px;
+  }
+  75% {
+    height: 20px;
+  }
+  80% {
+    height: 15px;
+  }
+  85% {
+    height: 20px;
+  }
+  90% {
+    height: 25px;
+  }
+  95% {
+    height: 30px;
+  }
+  100% {
+    height: 15px;
   }
 }
-@media screen and (max-width: 991px) {
-  .box__section{
-    width: calc((100% / 3) - 10px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .box__section{
-    width: calc((100% / 2) - 10px);
-  }
-  aside{
-    width: 200px;
-  }
-  .folder i{
-    flex-basis: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-  aside{
-    width: 50px;
-    text-align: center;
-  }
-  .main__nav__list,
-  .playlist,
-  .logo{
-    display: none;
-  }
-  header{
-    padding: 10px 0;
-  }
-  .main__nav li a{
-    border: none;
-    padding: 5px 0;
-  }
-  .main__nav li a:hover,
-  .main__nav li a:focus{
-    color: #fff;
-    border: none;
-  }
-  .logo_xs{
-    display: inline-block;
-  }
-  .main__nav__list_xs{
-    display: inline-block;
-  }
-  .install,
-  .user{
-    display: none;
-  }
-  .install_xs,
-  .user_xs{
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  .user__box hr{
-    display: none;
-  }
-  footer{
-    padding: 5px;
-  }
-  .footer__info_music{
-    justify-content: center;
-  }
-  .track_img img{
-    width: 35px;
-  }
-  .track_name h6{
-    font-size: 11px;
-  }
-  .track_name span small{
-    font-size: 9px;
-  }
-  .folder i{
-    flex-basis: auto;
-  }
-  .footer__player{
-    order: -1;
-    width: 100%;
-  }
-  .footer__info_music,
-  .footer__audio{
-    width: 50%;
-  }
-  .button__player li {
-    margin-right: 25px;
-    font-size: 9px;
-  }
-  .btn__play {
-    font-size: 20px;
-  }
-  .footer__audio{
-    justify-content: center;
-  }
-}
-/* /responsive */
+/* /animation */

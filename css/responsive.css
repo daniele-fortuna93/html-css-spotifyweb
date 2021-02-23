@@ -1,0 +1,293 @@
+/* responsive */
+@media screen and (max-width: 2600px) {
+  .animation__bar{
+    bottom: -135px;
+    right: -135px
+  }
+  .animation__bar:nth-child(2){
+    right: -125px;
+  }
+  .animation__bar:nth-child(3){
+    right: -115px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -110px;
+    right: -80px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: -70px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: -60px;
+  }
+}
+@media screen and (max-width: 2400px) {
+  .animation__bar{
+    bottom: -115px;
+    right: -115px
+  }
+  .animation__bar:nth-child(2){
+    right: -105px;
+  }
+  .animation__bar:nth-child(3){
+    right: -95px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -95px;
+    right: -70px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: -60px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: -50px;
+  }
+}
+@media screen and (max-width: 2200px) {
+  .animation__bar{
+    bottom: -95px;
+    right: -95px
+  }
+  .animation__bar:nth-child(2){
+    right: -85px;
+  }
+  .animation__bar:nth-child(3){
+    right: -75px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -65px;
+    right: -45px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: -35px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: -25px;
+  }
+}
+@media screen and (max-width: 1899px) {
+  .animation__bar{
+    bottom: -75px;
+    right: -75px
+  }
+  .animation__bar:nth-child(2){
+    right: -65px;
+  }
+  .animation__bar:nth-child(3){
+    right: -55px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -60px;
+    right: -35px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: -25px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: -15px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .animation__bar{
+    bottom: -60px;
+    right: -60px
+  }
+  .animation__bar:nth-child(2){
+    right: -50px;
+  }
+  .animation__bar:nth-child(3){
+    right: -40px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -50px;
+    right: -20px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: -10px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .animation__bar{
+    bottom: -45px;
+    right: -45px
+  }
+  .animation__bar:nth-child(2){
+    right: -35px;
+  }
+  .animation__bar:nth-child(3){
+    right: -25px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -40px;
+    right: -5px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: 5px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: 15px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .box__section{
+    width: calc((100% / 4) - 10px);
+  }
+  .animation__bar{
+    bottom: -54px;
+    right: -55px
+  }
+  .animation__bar:nth-child(2){
+    right: -45px;
+  }
+  .animation__bar:nth-child(3){
+    right: -35px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -50px;
+    right: -10px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: 0px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .box__section{
+    width: calc((100% / 3) - 10px);
+  }
+}
+@media screen and (max-width:860px) {
+  .animation__bar{
+    bottom: -40px;
+    right: -40px
+  }
+  .animation__bar:nth-child(2){
+    right: -30px;
+  }
+  .animation__bar:nth-child(3){
+    right: -20px;
+  }
+  .img_circle .overlay i .animation__bar{
+    right: -10px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: 0px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .box__section{
+    width: calc((100% / 2) - 10px);
+  }
+  aside{
+    width: 200px;
+  }
+  .folder i{
+    flex-basis: 100%;
+  }
+  .animation__bar{
+    bottom: -65px;
+    right: -65px
+  }
+  .animation__bar:nth-child(2){
+    right: -55px;
+  }
+  .animation__bar:nth-child(3){
+    right: -45px;
+  }
+  .img_circle .overlay i .animation__bar{
+    bottom: -60px;
+    right: -5px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(2){
+    right: 5px;
+  }
+  .img_circle .overlay i .animation__bar:nth-child(3){
+    right: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  aside{
+    width: 50px;
+    text-align: center;
+  }
+  .main__nav__list,
+  .playlist,
+  .logo{
+    display: none;
+  }
+  header{
+    padding: 10px 0;
+  }
+  .main__nav li a{
+    border: none;
+    padding: 5px 0;
+  }
+  .main__nav li a:hover,
+  .main__nav li a:focus{
+    color: #fff;
+    border: none;
+  }
+  .logo_xs{
+    display: inline-block;
+  }
+  .main__nav__list_xs{
+    display: inline-block;
+  }
+  .install,
+  .user{
+    display: none;
+  }
+  .install_xs,
+  .user_xs{
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  .user__box hr{
+    display: none;
+  }
+  footer{
+    padding: 5px;
+  }
+  .footer__info_music{
+    justify-content: center;
+  }
+  .track_img img{
+    width: 35px;
+  }
+  .track_name h6{
+    font-size: 11px;
+  }
+  .track_name span small{
+    font-size: 9px;
+  }
+  .folder i{
+    flex-basis: auto;
+  }
+  .footer__player{
+    order: -1;
+    width: 100%;
+  }
+  .footer__info_music,
+  .footer__audio{
+    width: 50%;
+  }
+  .button__player li {
+    margin-right: 25px;
+    font-size: 9px;
+  }
+  .btn__play {
+    font-size: 20px;
+  }
+  .footer__audio{
+    justify-content: center;
+  }
+}
+/* /responsive */
