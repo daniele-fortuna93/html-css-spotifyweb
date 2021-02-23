@@ -93,7 +93,7 @@ li{
   color: #fff;
   font-size: 50px;
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .overlay i:hover{
   color: #1db954;
@@ -105,9 +105,11 @@ li{
   right: 10px;
   width: 6px;
   height: 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   background-color: #1db954;
   animation-name: play_bar;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 .animation__bar:nth-child(2){
@@ -123,6 +125,8 @@ li{
 }
 .img_circle .overlay i .animation__bar{
   bottom: 50%;
+  transform: translateY(50%);
+  border-radius: 20px;
 }
 /* /mix */
 /* btn */
@@ -492,7 +496,7 @@ footer{
     height: 35px;
   }
   25% {
-    height: 30px;
+    height: 40px;
   }
   30% {
     height: 35px;
@@ -513,7 +517,7 @@ footer{
     height: 20px;
   }
   60% {
-    height: 35px;
+    height: 40px;
   }
   65% {
     height: 30px;
