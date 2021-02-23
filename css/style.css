@@ -63,7 +63,7 @@ footer .btn{
 } /* colore di sfondo delle scrollbar */
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: #666666;
   border-radius: 20px;
 }
 .text_center{

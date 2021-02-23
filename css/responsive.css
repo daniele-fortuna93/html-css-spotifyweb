@@ -290,4 +290,9 @@
     justify-content: center;
   }
 }
+@media screen and (max-height:350px) {
+  .top__bar{
+    display: none;
+  }
+}
 /* /responsive */
