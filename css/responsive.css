@@ -10,6 +10,11 @@
     right: 40px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .box__section{
+    width: calc((100% / 5) - 10px);
+  }
+}
 @media screen and (max-width: 1199px) {
   .box__section{
     width: calc((100% / 4) - 10px);
