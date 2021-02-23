@@ -90,7 +90,6 @@ li{
   transition: 0.3s;
 }
 .overlay i{
-  position: relative;
   color: #fff;
   font-size: 50px;
   opacity: 0;
@@ -102,8 +101,8 @@ li{
 .animation__bar{
   display: none;
   position: absolute;
-  bottom: -55px;
-  right: -65px;
+  bottom: 10px;
+  right: 10px;
   width: 6px;
   height: 10px;
   background-color: #1db954;
@@ -113,23 +112,17 @@ li{
 }
 .animation__bar:nth-child(2){
   animation-delay: 0.4s;
-  right: -55px;
+  right: 20px;
 }
 .animation__bar:nth-child(3){
   animation-delay: 0.8s;
-  right: -45px;
+  right: 30px;
 }
 .overlay i:hover .animation__bar{
   display: block;
 }
 .img_circle .overlay i .animation__bar{
-  right: -45px;
-}
-.img_circle .overlay i .animation__bar:nth-child(2){
-  right: -35px;
-}
-.img_circle .overlay i .animation__bar:nth-child(3){
-  right: -25px;
+  bottom: 50%;
 }
 /* /mix */
 /* btn */
