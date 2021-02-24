@@ -44,7 +44,9 @@
   }
   .main__nav__list,
   .playlist,
-  .logo{
+  .logo,
+  .install,
+  .user{
     display: none;
   }
   header{
@@ -59,15 +61,9 @@
     color: #fff;
     border: none;
   }
-  .logo_xs{
-    display: inline-block;
-  }
+  .logo_xs,
   .main__nav__list_xs{
     display: inline-block;
-  }
-  .install,
-  .user{
-    display: none;
   }
   .install_xs,
   .user_xs{
